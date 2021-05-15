@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./",
+    "rootDir": "./",
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
     "paths": {
       "@/*": [
         "src/*"
@@ -31,7 +33,13 @@
     "target": "es5",
     "module": "es6",
     "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noImplicitAny": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "strictNullChecks": true,
+  },
+  "include": ["src"],
+  "exclude": ["**/node_modules", "**/.*/"]
 }

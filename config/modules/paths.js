@@ -6,7 +6,7 @@ const paths = {
   entryPath: path.resolve(__dirname, '../../', 'src'),
   publicPath: path.resolve(__dirname, '../../', 'public'),
   templatePath: path.resolve(__dirname, '../../', 'src/template.html'),
-  imagesPath: path.resolve(__dirname, '../../', 'src/index'),
+  imagesPath: path.resolve(__dirname, '../../', 'src/images'),
   iconsPath: path.resolve(__dirname, '../../', 'src/icons'),
 };
 

@@ -17,7 +17,7 @@ const commonConfig = merge(
 
     resolve: {
       modules: [paths.entryPath, 'node_modules'],
-      extensions: ['*', '.js', '.jsx', 'ts', '.tsx'],
+      extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
       alias: {
         '@': paths.entryPath,
         '@components': `${paths.entryPath}/components`,
