@@ -3,7 +3,7 @@ const scripts = () => {
     module: {
       rules: [
         {
-          test: /\.(tsx|ts)?$/,
+          test: /\.(tsx|ts|js)?$/,
           use: 'babel-loader',
           exclude: '/node_modules/',
         },
