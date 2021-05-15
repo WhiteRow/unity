@@ -6,7 +6,8 @@ const paths = {
   entryPath: path.resolve(__dirname, '../../', 'src'),
   publicPath: path.resolve(__dirname, '../../', 'public'),
   templatePath: path.resolve(__dirname, '../../', 'src/template.html'),
-  assetsPath: path.resolve(__dirname, '../../', 'assets'),
+  imagesPath: path.resolve(__dirname, '../../', 'src/index'),
+  iconsPath: path.resolve(__dirname, '../../', 'src/icons'),
 };
 
 module.exports = paths;

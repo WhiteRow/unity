@@ -2,7 +2,8 @@ const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const paths = require('./modules/paths');
 const scripts = require('./modules/scripts');
-const htmlExtract = require('./modules/html.extract');
+const htmlExtract = require('./modules/html.extract')
+const assetsExtract = require('./modules/assets.extract');
 
 const commonConfig = merge(
   {
@@ -24,6 +25,8 @@ const commonConfig = merge(
         '@pages': `${paths.entryPath}/pages`,
         '@routes': `${paths.entryPath}/routes`,
         '@utils': `${paths.entryPath}/utils`,
+        '@images': `${paths.imagesPath}`,
+        '@icons': `${paths.iconsPath}`,
       },
     },
 
@@ -35,6 +38,7 @@ const commonConfig = merge(
 
   scripts(),
   htmlExtract(),
+  assetsExtract(),
 );
 
 module.exports = commonConfig;

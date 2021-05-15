@@ -19,6 +19,12 @@
       ],
       "@containers/*": [
         "src/containers/*"
+      ],
+      "@images/*": [
+        "src/images/*"
+      ],
+      "@icons/*": [
+        "src/icons/*"
       ]
     },
     "outDir": "./dist",
