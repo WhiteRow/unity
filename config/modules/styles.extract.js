@@ -3,35 +3,32 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const stylesExtract = () => {
   return {
     module: {
-      module: {
-        rules: [
-          {
-            test: /\.(sc|sa)ss$/,
-            use: [
-              {
-                loader: 'style-loader',
+      rules: [
+        {
+          test: /\.(sc|sa)ss$/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 2,
               },
-              MiniCssExtractPlugin.loader,
-              {
-                loader: 'css-loader',
-              },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  plugins: [autoprefixer, cssnano],
-                },
-              },
-              {
-                loader: 'sass-loader',
-              },
-            ],
-          },
-        ],
-      },
+            },
+            {
+              loader: 'postcss-loader',
+            },
+            {
+              loader: 'sass-loader',
+            },
+          ],
+        },
+      ],
+    },
 
-      plugins: [new MiniCssExtractPlugin()],
-    }
-  }
-}
+    plugins: [new MiniCssExtractPlugin({
+      filename: 'bundle.css',
+    })],
+  };
+};
 
 module.exports = stylesExtract;

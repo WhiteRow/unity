@@ -8,7 +8,7 @@ const commonConfig = merge(
   {
     entry: [paths.root],
     output: {
-      path: paths.outputPath + '/index.tsx',
+      path: paths.outputPath,
       filename: 'bundle.js',
     },
 
@@ -20,6 +20,7 @@ const commonConfig = merge(
       alias: {
         '@': paths.entryPath,
         '@components': `${paths.entryPath}/components`,
+        '@containers': `${paths.entryPath}/containers`,
         '@pages': `${paths.entryPath}/pages`,
         '@routes': `${paths.entryPath}/routes`,
         '@utils': `${paths.entryPath}/utils`,

@@ -5,11 +5,11 @@ const scripts = () => {
         {
           test: /\.(tsx|ts)?$/,
           use: 'babel-loader',
-          exclude: '/node_modules/'
-        }
+          exclude: '/node_modules/',
+        },
       ],
     },
-  }
+  };
 };
 
 module.exports = scripts;
