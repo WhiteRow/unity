@@ -1,12 +1,13 @@
 // vendor
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import '~normalize.css';
 
-// base
-@import './base/reset';
-@import './base/vars';
-@import './base/functions';
-@import './base/base';
+// settings
+@import './settings/vars';
+@import './settings/functions';
+@import './settings/mixins';
+@import './settings/base';
 
 // components
 
