@@ -1,0 +1,45 @@
+$fontFamilyMain: 'Poppins';
+$fontFamilyOptional: 'Inter';
+
+$fontWeightRegular: 400;
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+
+$fontSizeTiny: 12px;
+$fontSizeTinyP: 13px;
+$fontSizeSmall: 14px;
+$fontSizeSmallP: 16px;
+$fontSizeMedium: 18px;
+$fontSizeMediumP: 24px;
+$fontSizeBig: 32px;
+$fontSizeBigP: 40px;
+$fontSizeLarge: 48px;
+$fontSizeLargeP: 56px;
+$fontSizeHuge: 64px;
+$fontSizeHugeP: 72px;
+$fontSizeHugeE: 96px;
+
+$white: #ffffff;
+$mercury: #e4e4e4;
+$shark: #1b1d21;
+$dodgerBlue: #355dff;
+$moodyBlue: #6c5dd3;
+$accentBlue: #3f8cff;
+$lavenderRose: #ff98e5;
+$emerald: #4fbf67;
+$orange: #ff6628;
+$neonCarrot: #ff9f38;
+$bittersweet: #ff7a68;
+$puertoRico: #3dbaa2;
+$gradientMoody: radial-gradient(103.03% 103.03% at 0% 0%, #d080ff 0%, #6c5dd3 100%);
+$gradientEmerald: linear-gradient(223.58deg, #86e1a0 12.52%, #4fbf67 75.73%);
+
+$transitionFast: 0.2s;
+$transitionMediun: 0.3s;
+$transitionLong: 0.4s;
+$transitionFuncEio: ease-in-out;
+$transitionFuncBezier: cubic-bezier(0.02, 0.01, 0.47, 1);
+
+$borderRadiusMain: 12px;
+$borderRadiusCircle: 50%;

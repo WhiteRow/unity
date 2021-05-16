@@ -1,0 +1,23 @@
+html {
+  font-family: $fontFamilyMain;
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeSmallP;
+
+  box-sizing: border-box;
+
+  * {
+    box-sizing: inherit;
+    &::before,
+    &::after {
+      box-sizing: inherit;
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+figure {
+  line-height: 0;
+}
