@@ -1,7 +1,7 @@
 html {
   font-family: $fontFamilyMain;
   font-weight: $fontWeightRegular;
-  font-size: $fontSizeSmallP;
+  font-size: rem($fontSizeSmallP);
 
   box-sizing: border-box;
 

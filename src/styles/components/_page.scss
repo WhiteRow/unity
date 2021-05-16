@@ -1,0 +1,19 @@
+.page {
+  width: 100%;
+
+  &__container {
+    width: 100%;
+    max-width: rem($contentWidth);
+    margin: 0 auto;
+    padding: rem(36px) rem($contentGutterHorizontal) rem($contentGutterHorizontal);
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__col {
+    flex-basis: 50%; // заглушка
+  }
+}
