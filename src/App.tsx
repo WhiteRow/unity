@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
-import images from './images/';
+const Home = React.lazy(() => import('@pages/Home'))
 
-export default function App() {
+const App = () => {
   return (
-    <>
-      <h1>Hello</h1>
-      <img src={images.logoLight} alt="" />
-    </>
+    <React.StrictMode>
+      <Suspense fallback={<div>Загрузка...</div>}> 
+        <div className="wrapper">
+          {/* sidebar here */}
+          <Home />
+        </div>
+      </Suspense>
+    </React.StrictMode>
   );
-}
+};
+
+export default App;
