@@ -10,7 +10,6 @@ interface IProps {
 }
 
 const Icon = ({ wrapperClassName, svgClassName, icon, onClick }: IProps) => {
-
   return (
     <ReactSVG
       afterInjection={(error, svg) => {
