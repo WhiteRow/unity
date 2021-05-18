@@ -1,21 +1,21 @@
-  
-declare module "*.scss" {
-    const content: { [className: string]: string };
-    export = content;
-  }
-    
-  declare module "*.svg" {
-    import React = require("react");
-    const ReactComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-    export default ReactComponent;
-  }
+declare module '*.scss' {
+  const content: { [className: string]: string };
+  export = content;
+}
 
-  declare module "*.png" {
-    const value: any;
-    export default value;
-  }
+declare module '*.svg' {
+  import React = require('react');
+  export const ReactComponent: React.SFC<React.SVGProps<SVGSVGElement>>;
+  const src: string;
+  export default src;
+}
 
-  declare module "*jpg" {
-    const value: any;
-    export default value;
-  }
+declare module '*.png' {
+  const value: any;
+  export default value;
+}
+
+declare module '*jpg' {
+  const value: any;
+  export default value;
+}
