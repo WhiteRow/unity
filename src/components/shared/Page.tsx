@@ -9,7 +9,7 @@ interface IProps {
 const Page = ({ children, className }: IProps) => {
   const classes = classNames('page', className);
 
-  return <div className={classNames(classes)}>{children}</div>;
+  return <main className={classNames(classes)}>{children}</main>;
 };
 
 export default Page;
