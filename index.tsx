@@ -1,9 +1,14 @@
-import '@/styles/app.scss';
-
 import React from 'react';
-import ReactDOM from 'react-dom';
-
+import { render } from 'react-dom';
+import {Provider} from 'react-redux';
+import '@/styles/app.scss';
+import { store } from '@/store/index';
 import App from '@/App';
 
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.querySelector('#root')
+);

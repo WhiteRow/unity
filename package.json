@@ -25,6 +25,7 @@
     "@babel/preset-typescript": "^7.13.0",
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.5",
+    "@types/react-redux": "^7.1.16",
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
@@ -44,6 +45,7 @@
     "prettier": "^2.3.0",
     "react-hot-loader": "^4.13.0",
     "react-svg": "^13.0.5",
+    "redux-devtools-extension": "^2.13.9",
     "sass-loader": "^11.1.1",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.1.2",
@@ -58,6 +60,9 @@
     "classnames": "^2.3.1",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0"
   }
 }
