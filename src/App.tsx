@@ -1,16 +1,13 @@
-import React, { Suspense } from 'react';
-
-const Home = React.lazy(() => import('@pages/Home'));
+import React from 'react';
+import RouterView from '@components/RouterView';
 
 const App = () => {
   return (
     <React.StrictMode>
-      <Suspense fallback={<div>Загрузка...</div>}>
         <div className="wrapper">
           {/* sidebar here */}
-          <Home />
+          <RouterView />
         </div>
-      </Suspense>
     </React.StrictMode>
   );
 };
