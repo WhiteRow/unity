@@ -1,0 +1,9 @@
+.headline {
+  font-weight: $fontWeightMedium;
+  
+  color: $white;
+
+  &--big {
+    font-size: rem($fontSizeBig);
+  }
+}
