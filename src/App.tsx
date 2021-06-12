@@ -1,11 +1,12 @@
 import React from 'react';
 import RouterView from '@components/RouterView';
+import Sidebar from '@components/Sidebar/index';
 
 const App = () => {
   return (
     <React.StrictMode>
         <div className="wrapper">
-          {/* sidebar here */}
+          <Sidebar />
           <RouterView />
         </div>
     </React.StrictMode>
